@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/robotstxt.html
+
+Sitemap: https://inradius.space/sitemapKDG.xml.gz
+Sitemap: https://inradius.space/sitemapTR.xml.gz
+Sitemap: https://inradius.space/sitemap.xml
+
+Sitemap: https://inradius.space/sitemapPlaces0.xml.gz
+Sitemap: https://inradius.space/sitemapPlaces1.xml.gz
+Sitemap: https://inradius.space/sitemapPlaces2.xml.gz
+Sitemap: https://inradius.space/sitemapPlaces3.xml.gz
+Sitemap: https://inradius.space/sitemapPlaces4.xml.gz
+Sitemap: https://inradius.space/sitemapPlaces5.xml.gz
+User-agent: *
+Disallow:

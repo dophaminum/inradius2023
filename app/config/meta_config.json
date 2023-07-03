@@ -1,0 +1,8 @@
+{
+  "WEBSITE_URL": "https://inradius.space",
+  "AMP_WEBSITE_URL": "https://inradius.space/amp",
+  "META_SITE_IMAGE": "/logo512.png",
+  "META_SITE_NAME": "inradius.space",
+  "OLD_SITE_FALLBACK": "https://inradius.space",
+  "CANONICAL_LANG": "en"
+}

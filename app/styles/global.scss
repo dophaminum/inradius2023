@@ -1,0 +1,28 @@
+@use "../../node_modules/normalize.css/normalize.css";
+@use "./antd.css";
+@use "../../node_modules/leaflet/dist/leaflet.css";
+@use "./LeafletMap.scss";
+@use "../../node_modules/leaflet.markercluster/dist/MarkerCluster.css";
+@use "../../node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css"
+  as _;
+@import "./Header.scss";
+@import "./FloatingActions.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

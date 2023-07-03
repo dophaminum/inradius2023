@@ -1,0 +1,22 @@
+{
+  "menu": "Menu",
+  "filters": "Filters",
+  "filter": {
+    "select all": "Check all",
+    "apply": "Apply",
+    "discard": "Discard",
+    "private": "Private Tours",
+    "search": "Search text"
+  },
+  "Movement type": "Movement type",
+  "Price": "Price",
+  "Max persons": "Max persons",
+  "Meeting point": "Meeting point",
+  "Your guide": "Your guide",
+  "car": "car",
+  "foot": "foot",
+  "Submit an application": "Submit an application",
+  "Contacts": "Contacts",
+  "metaTitle": "InRadius - discover local events near you",
+  "metaDescription": "InRadius is a web service for connecting people through live events. Here you can choose events that match your interests or create your own."
+}

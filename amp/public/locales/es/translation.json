@@ -1,0 +1,11 @@
+{
+  "menu": "Menú",
+  "filters": "Filters",
+  "filter": {
+    "select all": "Check all",
+    "apply": "Apply",
+    "discard": "Discard",
+    "private": "Private Tours",
+    "search": "Search text"
+  }
+}

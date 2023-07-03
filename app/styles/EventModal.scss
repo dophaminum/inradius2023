@@ -1,0 +1,27 @@
+.event {
+  &__modal {
+    max-width: 62.5rem;
+    font-size: 18px;
+    top: 3px;
+    padding:3px;
+
+    width: 80vw !important;
+    @media screen and (max-width: 43.12em) {
+      width: 96vw !important;
+    }
+
+    @media screen and (min-width: 43.125em) {
+      font-size: 20px;
+    }
+  }
+  &__spinner {
+    display: flex;
+    min-height: 18.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    min-height: 18.75rem;
+  }
+}

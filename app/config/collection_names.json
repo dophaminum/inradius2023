@@ -1,0 +1,14 @@
+{
+    "all_collections": {
+      "tr": "tripster",
+      "kdg": "KudaGo",
+      "ev": "evvnt",
+      "tmpd": "timepad",
+      "p":"Places",
+      "city":"city",
+      "event":"events"
+    },
+  
+    "search_collections": ["KudaGo", "timepad","Places","events","city"]
+  }
+  

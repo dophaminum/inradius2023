@@ -1,0 +1,21 @@
+{
+  "menu": "Меню",
+  "filters": "Фильтр",
+  "filter": {
+    "select all": "Выбрать все",
+    "apply": "Применть",
+    "discard": "Убрать",
+    "private": "Индивидуальные экскурсии",
+    "search": "Искать по слову"
+  },
+  "Movement type": "Тип передвижения",
+  "Price": "Цена",
+  "Max persons": "Максимум человек",
+  "Meeting point": "Точка сбора",
+  "Your guide": "Ваш гид",
+  "car": "транспорт",
+  "foot": "пешком",
+  "Submit an application": "Оставить Заявку",
+  "Contacts": "Контакты",
+  "metaTitle": "InRadius - афиша событий в пешей доступности!!"
+}

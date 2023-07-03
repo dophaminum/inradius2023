@@ -1,0 +1,36 @@
+{
+  "name": "amp_version",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4263",
+    "build": "next build",
+    "start": "next start -p 4263",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "amperize": "^0.6.1",
+    "chalk": "^5.0.1",
+    "currency-symbol-map": "^5.1.0",
+    "dayjs": "^1.11.5",
+    "html-escaper": "^3.0.3",
+    "lodash": "^4.17.21",
+    "net": "^1.0.2",
+    "next": "12.3.1",
+    "next-i18next": "^12.0.1",
+    "next-images": "^1.8.4",
+    "next-language-detector": "^1.0.2",
+    "next-seo": "^5.5.0",
+    "node-fetch": "^3.2.10",
+    "normalize.css": "^8.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "string-strip-html": "^11.6.8"
+  },
+  "devDependencies": {
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1"
+  }
+}

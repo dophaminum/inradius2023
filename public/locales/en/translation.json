@@ -1,0 +1,35 @@
+{
+  "menu": "Menu",
+  "filters": "Filters",
+  "filter": {
+    "select all": "Check all",
+    "apply": "Apply",
+    "discard": "Discard",
+    "close": "Close",
+    "private": "Private Tours",
+    "search": "Search text"
+  },
+  "Movement type": "Movement type",
+  "Price": "Price",
+  "Max persons": "Max persons",
+  "Meeting point": "Meeting point",
+  "Your guide": "Your guide",
+  "car": "car",
+  "foot": "foot",
+  "Submit an application": "Submit an application",
+  "Contacts": "Contacts",
+  "metaTitle": "✨InRadius- discover local events near you",
+  "metaDescription": "The web service for connecting people🙌 through live events🎉. Here you can choose events that match your interests or create your own.",
+  "Resource not found": "Resource not found",
+  "geo": {
+    "notification": {
+      "title": "Geolocation"
+    },
+    "error": {
+      "1": "The acquisition of the geolocation information failed because the page didn't have the permission to do it.",
+      "2": "The acquisition of the geolocation failed because at least one internal source of position returned an internal error.",
+      "3": "The time allowed to acquire the geolocation was reached before the information was obtained."
+    }
+  },
+  "Unknown error": "Unknown error"
+}
