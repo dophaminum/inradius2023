@@ -1,6 +1,10 @@
 import collection_map from "../../config/collection_names.json";
 import catigoriesData from "../../config/categories.json";
-import { fetchEvent, fetchMarkers, fetchSearchEvent } from "~/api/api.client";
+import {
+  fetchEvent,
+  fetchSearchEvent,
+  fetchMarkersIfNeeded,
+} from "~/api/api.client";
 import { useTransition as useNavTransition } from "@remix-run/react";
 import dayjs from "dayjs";
 
@@ -42,7 +46,7 @@ function MapLayout() {
 
   const { isLoading: isMarkersLoading, data } = useQuery(
     ["markers"],
-    fetchMarkers,
+    fetchMarkersIfNeeded,
     {
       refetchOnWindowFocus: false,
       staleTime: 1000 * 60 * 10,

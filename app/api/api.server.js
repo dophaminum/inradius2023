@@ -2,17 +2,30 @@ import collection_map from "../config/collection_names.json";
 import config from "../../config.server";
 import { fetch } from "@remix-run/node";
 import cache from "~/cache/index";
+import sha256 from "crypto-js/sha256";
 
-const MARKERS_CACHE_KEY = "markers";
 const EVENT_CACHE_KEY = "event";
+const MARKERS_CACHE_KEY = "markers";
+const MARKERS_HASH_CACHE_KEY = "markersHash";
 
 const { API_URL, API_URL_SECOND } = config;
 
-export async function fetchMarkers() {
+export async function fetchMarkers(markersHash) {
   let markers = cache.get(MARKERS_CACHE_KEY);
+  let hash = cache.get(MARKERS_HASH_CACHE_KEY);
 
-  if (markers) {
-    return markers;
+  if (hash && markers) {
+    // проверка: сравниваем хеши
+    if (hash === markersHash) {
+      return {
+        hash,
+        markers: "ok",
+      };
+    }
+    return {
+      hash,
+      markers,
+    };
   }
 
   const response = await fetch(API_URL + "public/file.txt");
@@ -21,11 +34,18 @@ export async function fetchMarkers() {
   }
 
   markers = await response.json();
+  hash = sha256(JSON.stringify(markers)).toString();
+
   if (markers?.length) {
+    // требуется убрать время жизни, и хэш сумму на бек что там было принять решение актуальные у нас данные или нет
     cache.set(MARKERS_CACHE_KEY, markers, 1000 * 60 * 10); //? 10 минут кэширования маркеров;
+    cache.set(MARKERS_HASH_CACHE_KEY, hash, 1000 * 60 * 10); //? 10 минут кэширования маркеров;
   }
 
-  return markers;
+  return {
+    markers,
+    hash,
+  };
 }
 
 export async function fetchEvent({ id, collection }) {
